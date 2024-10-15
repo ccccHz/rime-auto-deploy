@@ -1,28 +1,65 @@
 patch:
   # ascii_mode、inline、no_inline、vim_mode 等等设定，可参考 /Library/Input Methods/Squirrel.app/Contents/SharedSupport/squirrel.yaml
+  # my app list
   app_options:
-    #com.raycast.macos:
-    #  ascii_mode: true   # 初始爲西文模式
-    #com.microsoft.VSCode:
-    #  ascii_mode: true   # 初始爲西文模式
-    #  vim_mode: true
-    #md.obsidian:
-    #  ascii_mode: true   # 初始爲西文模式
-    #  vim_mode: true
-    #org.alacritty:
-    #  ascii_mode: true   # 初始爲西文模式
-    #com.jetbrains.intellij:
-    #  ascii_mode: true
-    #  vim_mode: true
+    # 获取应用的 Bundle Identifier
+    # mdls -name kMDItemCFBundleIdentifier -r "/Applications/Android Studio.app"
+    com.apple.finder: # Finder
+      ascii_mode: true             # true默认英文,false默认中文
+    com.google.Chrome: # 谷歌浏览器
+      ascii_mode: true             # true默认英文,false默认中文
+    com.apple.Spotlight: # 聚焦搜索
+      ascii_mode: true             # true默认英文,false默认中文
+    com.runningwithcrayons.Alfred: # alfred
+      ascii_mode: true
+    com.apple.Terminal: # 终端
+      ascii_mode: true
+    com.microsoft.VSCode: # Visual Studio Code
+      ascii_mode: true
+      ascii_punct: true            # 中文状态输出英文标点(半角)
+      vim_mode: true
+    com.tencent.Lemon: # 腾讯柠檬
+      ascii_mode: true
+    com.apple.dt.Xcode: # Xcode
+      ascii_mode: true
+    com.nektony.App-Cleaner-SII: # App Cleaner & Uninstaller
+      ascii_mode: true
+    com.xunyong.hapigo: # hapigo
+      ascii_mode: true
+    com.termius-dmg.mac: # termius
+      ascii_mode: true
+    com.raycast.macos: # Raycast
+      ascii_mode: true
+    com.jetbrains.intellij: # idea
+      ascii_mode: true
+      vim_mode: true
+    com.jetbrains.intellij.ce:
+      ascii_mode: true
+      vim_mode: true
+    com.googlecode.iterm2:
+      ascii_mode: true
+      vim_mode: true        
+    md.obsidian: # obsidian
+      ascii_mode: true
+      vim_mode: true
+    com.google.android.studio:
+      ascii_mode: true
+      vim_mode: true
+    dev.zed.Zed:
+      ascii_mode: true
+      ascii_punct: true            # 中文状态输出英文标点(半角)
+      vim_mode: true
+      # no_inline: true   # 不使用行內編輯
+   
 
   style:
     # 选择皮肤，亮色与暗色主题
     # color_scheme: purity_of_form_custom
     # color_scheme_dark: purity_of_form_custom
-    # color_scheme: macos_light
-    # color_scheme_dark: macos_dark
-    color_scheme: mac_light
-    color_scheme_dark: mac_dark
+    color_scheme: macos_light
+    color_scheme_dark: macos_dark
+    # color_scheme: mac_light
+    # color_scheme_dark: mac_dark
 
     # 预设选项：（可被皮肤覆盖；如果皮肤没写，则默认使用这些属性。）
     text_orientation: horizontal  # horizontal | vertical
